@@ -1,0 +1,83 @@
+.todo--list {
+  max-height: 60vh;
+  margin: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  transition: 0.5s ease-out;
+  /* border: 1px solid; */
+}
+
+.todo--completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.todo--body {
+  /* min-width: 300px; */
+  /* max-width: 700px; */
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 6px;
+  border: 1px solid rgba(105, 105, 105, 0.5);
+  border-radius: 4px;
+}
+
+.todo--body:hover {
+  box-shadow: 2px 2px 5px 0px rgba(105, 105, 105, 0.5);
+}
+
+.todo--message {
+  margin: 8px;
+  flex: 2;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo--action {
+  margin: auto 12px;
+  text-align: right;
+  flex: 1;
+}
+
+.todo--action--icon {
+  font-size: 21px;
+  cursor: pointer;
+  margin: auto 6px;
+  position: relative;
+  top: 2px;
+}
+
+@media only screen and (max-width: 992px) {
+  .todo--body {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .todo--body {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .todo--list {
+    padding: 6px;
+    margin: 6px;
+  }
+  .todo--body {
+    width: 95%;
+  }
+  .todo--message {
+    font-size: 16px;
+  }
+  .todo--action--icon {
+    font-size: 16px;
+  }
+}

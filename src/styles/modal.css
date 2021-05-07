@@ -1,0 +1,93 @@
+.modal--container {
+  opacity: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  background: #fafafa;
+  border: 1px solid rgba(105, 105, 105, 0.3);
+  border-radius: 4px;
+  transition: 0.5s ease-out;
+  padding: 8px;
+  box-shadow: 2px 2px 5px 1px rgba(105, 105, 105, 0.3);
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  /* height: 70%;
+   max-height: 70vh;
+  min-height: 300px;
+  min-width: 250px; */
+}
+
+#modal-header-btn {
+  margin: 0;
+  padding: 4px 8px;
+}
+
+#modal-close-icon {
+  position: relative;
+  top: 2px;
+}
+
+.modal--header {
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+.modal--body {
+  flex: 4;
+  height: 100%;
+  /* border: 1px solid; */
+}
+.modal--footer {
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid; */
+}
+
+.modal--button {
+  margin: 8px 0px 0px 16px;
+  text-transform: capitalize;
+  padding: 8px 14px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid rgba(105, 105, 105, 0.3);
+  transition: 0.1s ease-in;
+}
+
+.modal--button:hover {
+  background-color: #fbfbfb;
+  border: 1px solid rgba(105, 105, 105, 0.7);
+}
+
+.modal--button:focus {
+  outline-style: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .modal--container {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .modal--container {
+    width: 85%;
+  }
+  .modal--button {
+    margin: 4px 0px 0px 8px;
+    padding: 4px 7px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  #modal-header-btn {
+    margin: 0;
+    padding: 2px 4px;
+  }
+}

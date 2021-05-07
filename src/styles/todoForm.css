@@ -1,0 +1,80 @@
+.todo--form--container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.todo--field {
+  display: flex;
+  justify-content: flex-start;
+  margin: 4px;
+  padding: 2px;
+  /* border: 1px solid; */
+}
+
+.todo--label {
+  text-transform: capitalize;
+  font-family: 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+  font-weight: 400;
+  padding: 6px;
+  margin-right: 16px;
+  font-size: 18px;
+  flex: 1;
+}
+
+.todo--input {
+  flex: 2;
+  font-size: 18px;
+  margin: 0 8px;
+  width: 80%;
+  color: rgba(55, 53, 47);
+  background: transparent;
+  border: 1px solid rgba(105, 105, 105, 0.3);
+  border-radius: 4px;
+  padding: 6px;
+  font-family: 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+}
+
+.todo--input:hover {
+  background-color: rgba(55, 53, 47, 0.08);
+}
+
+.todo--input:focus {
+  background-color: #fbfbfb;
+  box-shadow: 2px 2px 5px 0px rgba(105, 105, 105, 0.5);
+  outline-width: 0;
+}
+
+#todo-message {
+  display: flex;
+  flex-direction: column;
+}
+
+#todo-inp-message {
+  width: 100%;
+  margin: 10px auto 8px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .todo--form--container {
+    padding: 12px;
+  }
+
+  #todo-inp-message {
+    width: 100%;
+    margin: 4px;
+    margin-top: 8px;
+    padding: 6px;
+  }
+  .todo--label {
+    font-size: 16px;
+  }
+  .todo--input {
+    font-size: 16px;
+  }
+  #form-error-message {
+    font-size: 16px;
+  }
+}
